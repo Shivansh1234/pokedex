@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'feature', loadChildren: () => import('./feature/feature.module').then(f => f.FeatureModule) }
+  { path: 'pokemon', loadChildren: () => import('./pokemon/pokemon.module').then(p => p.PokemonModule) }
 ];
 
 @NgModule({

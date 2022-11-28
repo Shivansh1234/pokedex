@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { POKEMON_LIST } from '../feature.constant';
+import { POKEMON_LIST } from '../pokemon.constant';
 import { Pokemon } from '../models/pokemon';
 import { PokemonList } from '../models/pokemon-list';
 

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FeatureRoutingModule } from './feature-routing.module';
+import { PokemonRoutingModule } from './pokemon-routing.module';
 
 // Material Imports
 import { MatTableModule } from '@angular/material/table';
@@ -12,16 +12,18 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 import { PokemonComponent } from './components/pokemon/pokemon.component';
 import { SharedModule } from '../shared/shared.module';
 import { PokemonDetailsComponent } from './components/pokemon-details/pokemon-details.component';
+import { PokemonTypeToArrayPipe } from './pipes/pokemon-type-to-array.pipe';
 
 
 @NgModule({
   declarations: [
     PokemonComponent,
-    PokemonDetailsComponent
+    PokemonDetailsComponent,
+    PokemonTypeToArrayPipe
   ],
   imports: [
     CommonModule,
-    FeatureRoutingModule,
+    PokemonRoutingModule,
     SharedModule,
 
     // Material Imports
@@ -31,4 +33,4 @@ import { PokemonDetailsComponent } from './components/pokemon-details/pokemon-de
     MatProgressSpinnerModule
   ]
 })
-export class FeatureModule { }
+export class PokemonModule { }

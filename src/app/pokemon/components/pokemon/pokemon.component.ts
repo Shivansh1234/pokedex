@@ -3,7 +3,7 @@ import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { forkJoin, Observable, switchMap } from 'rxjs';
 import { ArrayToCsvPipe } from 'src/app/shared/pipes/array-to-csv.pipe';
-import { POKEMON_TABLE_PAGE_OFFSET, POKEMON_TABLE_PAGE_SIZE } from '../../feature.constant';
+import { POKEMON_TABLE_PAGE_OFFSET, POKEMON_TABLE_PAGE_SIZE } from '../../pokemon.constant';
 import { Pokemon } from '../../models/pokemon';
 import { PokemonList } from '../../models/pokemon-list';
 import { PokemonService } from '../../services/pokemon.service';
