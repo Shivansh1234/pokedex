@@ -1,4 +1,4 @@
-export const baseUrl: string = `https://pokeapi.co/api/v2/`
+export const baseUrl: string = `https://pokeapi.co/api/v2/`;
 
 // Pokemon consts
 export const POKEMON_LIST: string = `${baseUrl}pokemon/`;

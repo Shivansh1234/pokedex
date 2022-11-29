@@ -18,7 +18,9 @@
         <!-- Name Column -->
         <ng-container matColumnDef="name">
             <th mat-header-cell *matHeaderCellDef> Name </th>
-            <td mat-cell *matCellDef="let row"> {{row.name | titlecase}} </td>
+            <td mat-cell *matCellDef="let row">
+                <button mat-button [routerLink]="[row.id]">{{row.name | titlecase}}</button>
+            </td>
         </ng-container>
 
         <!-- Type Column -->
