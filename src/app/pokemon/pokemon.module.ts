@@ -8,12 +8,13 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatCardModule } from '@angular/material/card';
 
 import { PokemonComponent } from './components/pokemon/pokemon.component';
 import { SharedModule } from '../shared/shared.module';
 import { PokemonDetailsComponent } from './components/pokemon-details/pokemon-details.component';
 import { PokemonTypeToArrayPipe } from './pipes/pokemon-type-to-array.pipe';
-import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatPaginatorModule,
     MatButtonModule,
     MatProgressSpinnerModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCardModule
   ]
 })
 export class PokemonModule { }

@@ -4,6 +4,6 @@
     <p></p>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
-    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button [mat-dialog-close]="true" (click)="onCancel()">Cancel</button>
     <button mat-button [mat-dialog-close]="true" (click)="onClose()" color="warn" cdkFocusInitial>Redirect to</button>
 </mat-dialog-actions>
